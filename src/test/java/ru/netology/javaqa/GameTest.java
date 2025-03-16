@@ -4,11 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class GameTest {
 
-    List<Player> players = new ArrayList<>();
+    HashMap<String, Player> players = new HashMap<>();
     Player player1 = new Player(1, "Mark", 200);
     Player player2 = new Player(5, "Sonya", 100);
     Player player3 = new Player(10, "Max", 200);
@@ -70,7 +71,7 @@ public class GameTest {
         game.register(player3);
 
         int excepted = 0;
-        int actual = game.round("Mark", "Max    ");
+        int actual = game.round("Mark", "Max");
 
         Assertions.assertEquals(excepted, actual);
 
