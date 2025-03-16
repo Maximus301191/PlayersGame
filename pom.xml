@@ -35,7 +35,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <failIfNoTests>true</failIfNoTests>
-                    <failIfNoTests>fals</failIfNoTests>
+                    <failIfNoTests>false</failIfNoTests>
                 </configuration>
             </plugin>
             <plugin>
