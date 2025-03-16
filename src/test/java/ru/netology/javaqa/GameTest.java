@@ -70,7 +70,7 @@ public class GameTest {
         game.register(player3);
 
         int excepted = 0;
-        int actual = game.round("Mark", "Max    ");
+        int actual = game.round("Mark", "Max");
 
         Assertions.assertEquals(excepted, actual);
 

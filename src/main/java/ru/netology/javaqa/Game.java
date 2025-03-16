@@ -27,12 +27,12 @@ public class Game {
 
         if (player1 == null) {
             throw new NotRegisteredException(
-                    "Игрок" + playerName1 + "not registered"
+                    "Игрок " + playerName1 + "not registered"
             );
         }
         if (player2 == null) {
             throw new NotRegisteredException(
-                    "Игрок" + playerName2 + "not registered"
+                    "Игрок " + playerName2 + "not registered"
             );
         }
         if (player1.getStrenght() > player2.getStrenght()) {
